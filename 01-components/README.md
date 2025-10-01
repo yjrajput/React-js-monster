@@ -1,16 +1,11 @@
-# React + Vite
+### Assignment Instructions:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. **Break Down the UI into Components**  
+   Take a look at the provided UI. Your task is to divide it into multiple React components. You don't need to write any code for this step. Simply use a pen and paper or a photo editing tool to visualize how the UI can be split into different components. This exercise will help you get a better understanding of component structure in React.
 
-Currently, two official plugins are available:
+![UI Image](Wiki.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Create a Greet Component**
+   - Create a new file called `Greet.jsx` and inside that file, write a `Greet` component using the **function declaration** syntax.
+   - Afterward, refactor the `Greet` component to use the **arrow function** syntax.
+   - Finally, register the `Greet` component in your `App.jsx` file so that you can see the result when running the app.
