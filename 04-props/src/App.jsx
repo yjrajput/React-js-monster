@@ -1,6 +1,7 @@
 import React from 'react'
 import Person from './components/Person'
 import Product from './components/Product'
+import ParentToChild from './components/ParentToChild'
 
 
 const User = (props) =>{
@@ -38,6 +39,13 @@ const App = () => {
       <Person name = {name} age = {age}/>
       <hr />
       <Product product = {product}/>
+      <hr />
+
+      <ParentToChild>
+        <h1>Hello my name is yuvraj singh rathore</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat. Obcaecati eos illum aspernatur, illo assumenda laborum possimus, animi maiores laudantium veniam eveniet atque omnis voluptatibus, quos nihil unde ipsum?</p>
+        <button>Learn more</button>
+      </ParentToChild>
     </div>
   )
 }
