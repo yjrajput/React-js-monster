@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.output-container{
+    max-width: 500px;
+    margin-top: 1rem;
+    
+    
+
+}
+p{
+    font-size: 14px;
+}
+.output-container img{
+    max-width: 300px;
+    border-radius: 20px;
+}
+.info-container{
+    display: flex;
+    justify-content: space-between;
+}
