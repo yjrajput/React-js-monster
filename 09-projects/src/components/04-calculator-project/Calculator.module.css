@@ -1,0 +1,92 @@
+/* === Overall Page Layout === */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #8e9eab, #eef2f3);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === Calculator Box === */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Input Display === */
+.container input {
+  grid-column: span 4;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 0 10px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: #333;
+}
+
+/* === Buttons === */
+.container button {
+  height: 60px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  background-color: #5848f2;
+}
+
+
+
+
+/* === Special Buttons (C, =) === */
+.container button:first-child {
+  background: #ff4d6d;
+  color: #fff;
+}
+
+.container button:first-child:hover {
+  background: #e63950;
+}
+
+.container button:last-child {
+  background: #00c896;
+  color: #fff;
+}
+
+.container button:last-child:hover {
+  background: #00b082;
+}
+
+/* === Responsive Design === */
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(4, 70px);
+    padding: 15px;
+  }
+
+  .container button {
+    height: 55px;
+    font-size: 1.1rem;
+  }
+
+  .container input {
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
