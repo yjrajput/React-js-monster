@@ -1,0 +1,98 @@
+/* === Container === */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === Heading === */
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2b2d42;
+  margin-bottom: 1.5rem;
+}
+
+/* === Form === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+}
+
+/* === Button === */
+button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #5a52e0;
+  transform: scale(1.02);
+}
+
+/* === Todo Output === */
+.output-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f7ff;
+  border: 1px solid #e6e6ff;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.output-container:hover {
+  transform: translateY(-3px);
+}
+
+.output-container li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* === Remove Button === */
+.output-container button {
+  background-color: #ff4d6d;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.output-container button:hover {
+  background-color: #e63950;
+}
