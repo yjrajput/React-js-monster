@@ -1,0 +1,33 @@
+
+.heading{
+    font-size: 5rem;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(38, 34, 34);
+    color: white;
+}
+.btn-container{
+    display: flex;
+    gap: 20rem;
+    margin-top: 4rem;
+} 
+.btn-container button{
+    border: none;
+    font-size: 1.5rem;
+   width: 50px;
+   height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.btn-container button:hover{
+    background-color: black;
+    color: white;
+    
+}
