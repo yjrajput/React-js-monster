@@ -7,6 +7,7 @@ import Calculator from './components/04-calculator-project/Calculator'
 import Toggle from './components/05-togglebackground-project/Toggle'
 import HiddenSearch from './components/06-hiddensearchbar-project/HiddenSearch'
 import Testimonial from './components/07-testimonial-project/Testimonial'
+import Accordion from './components/08-accordion-project/Accordion'
 const App = () => {
   return (
     <div className='main-container'>
@@ -16,7 +17,8 @@ const App = () => {
       {/* <Calculator/> */}
       {/* <Toggle/> */}
       {/* <HiddenSearch/> */}
-      <Testimonial/>
+      {/* <Testimonial/> */}
+      <Accordion/>
     </div>
   )
 }
