@@ -6,6 +6,7 @@ import Meals from './components/03-meals-project/Meals'
 import Calculator from './components/04-calculator-project/Calculator'
 import Toggle from './components/05-togglebackground-project/Toggle'
 import HiddenSearch from './components/06-hiddensearchbar-project/HiddenSearch'
+import Testimonial from './components/07-testimonial-project/Testimonial'
 const App = () => {
   return (
     <div className='main-container'>
@@ -14,7 +15,8 @@ const App = () => {
       {/* <Meals/> */}
       {/* <Calculator/> */}
       {/* <Toggle/> */}
-      <HiddenSearch/>
+      {/* <HiddenSearch/> */}
+      <Testimonial/>
     </div>
   )
 }
