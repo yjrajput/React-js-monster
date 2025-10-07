@@ -1,16 +1,21 @@
 import React from 'react'
 import './Recommended.css'
+import Button from '../components/Button'
 const Recommended = () => {
+  const buttons = ['All Products', 'Nike', 'Adidas', 'Puma', 'Vans']
   return (
     <section className='recommended'>
-        <h2 >Recommended</h2>
-        <div className='recommended-btns'>
-          <button className='btns'>All Products</button>
-          <button className='btns'>Nike</button>
-          <button className='btns'>Adidas</button>
-          <button className='btns'>Puma</button>
-          <button className='btns'>Vans</button>
-        </div>
+      <h2 >Recommended</h2>
+      <div className='recommended-btns'>
+        {
+          buttons.map((items) => (
+
+            <Button key={Math.random()} items={items} />
+
+          ))
+        }
+      </div>
+
     </section>
   )
 }

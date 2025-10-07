@@ -33,3 +33,7 @@
 .bag{
     color: goldenrod;
 }
+.no-results{
+    margin: 200px auto;
+    font-size: 2rem;
+}

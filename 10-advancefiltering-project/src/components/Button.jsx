@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({ items, setSelectedCategory }) => {
   return (
-    <div>Button</div>
+    <>
+    <button onChange={(e) => setSelectedCategory(e.target.value)} className='btns'>{items}</button>
+    
+    </>
+
   )
 }
 

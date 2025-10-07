@@ -1,13 +1,18 @@
-import React from 'react'
+
 import './Nav.css'
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaRegCircleUser } from "react-icons/fa6";
-const Nav = () => {
+
+const Nav = ({setQuery}) => {
+  
+  
+
   return (
+    <>
     <nav>
       <div className="nav-container">
-        <input type="text" placeholder='Search your shoe here' className='search-input' />
+        <input type="text" placeholder='Search your shoe here' className='search-input' onChange={(event) => setQuery(event.target.value)} />
       </div>
 
       <div className='profile-container'>
@@ -18,6 +23,7 @@ const Nav = () => {
         </a>
       </div>
     </nav>
+    </>
   )
 }
 
