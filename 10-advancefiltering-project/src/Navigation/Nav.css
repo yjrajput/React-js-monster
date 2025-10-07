@@ -1,0 +1,37 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #f3f3f3;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
+    margin-left: 2rem;
+    position: relative;
+}
+.profile-container a{
+   display: flex;
+   gap: 1.5rem;
+}
+input{
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #f7f6f6;
+    width: 14rem;
+    position: relative;
+}
+
+@media (width < 440px) {
+    nav{
+        margin-left: .5rem;
+    }
+    .profile-container a{
+        gap: 1rem;
+    }
+    input{
+        width: 8rem;
+        padding: 10px 10px;
+    }
+}
